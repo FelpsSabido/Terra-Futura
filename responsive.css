@@ -1,0 +1,104 @@
+/* =====================================
+   RESPONSIVE.CSS
+===================================== */
+
+@media(max-width:1100px){
+
+    .impact-grid,
+    .tech-grid,
+    .dashboard-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .comparison-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .timeline::before{
+
+        display:none;
+
+    }
+
+    .timeline-item{
+
+        flex-direction:column;
+
+    }
+
+    .timeline-content{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar ul{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+    .impact-grid,
+    .tech-grid,
+    .dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #answers{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .calculator-card,
+    .quiz-card,
+    .cta-card{
+
+        padding:30px;
+
+    }
+
+}
+
+@media(max-width:500px){
+
+    .section{
+
+        padding:80px 0;
+
+    }
+
+    .hero{
+
+        min-height:90vh;
+
+    }
+
+}

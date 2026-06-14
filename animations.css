@@ -1,0 +1,207 @@
+/* =====================================
+   ANIMATIONS.CSS
+===================================== */
+
+/* REVEAL */
+
+.reveal{
+
+    opacity:0;
+
+    transform:
+    translateY(60px);
+
+    transition:
+    opacity .9s ease,
+    transform .9s ease;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+/* FADE LEFT */
+
+.fade-left{
+
+    opacity:0;
+
+    transform:
+    translateX(-80px);
+
+    transition:
+    all .8s ease;
+
+}
+
+.fade-left.active{
+
+    opacity:1;
+
+    transform:
+    translateX(0);
+
+}
+
+/* FADE RIGHT */
+
+.fade-right{
+
+    opacity:0;
+
+    transform:
+    translateX(80px);
+
+    transition:
+    all .8s ease;
+
+}
+
+.fade-right.active{
+
+    opacity:1;
+
+    transform:
+    translateX(0);
+
+}
+
+/* ZOOM */
+
+.zoom{
+
+    opacity:0;
+
+    transform:
+    scale(.8);
+
+    transition:
+    all .8s ease;
+
+}
+
+.zoom.active{
+
+    opacity:1;
+
+    transform:
+    scale(1);
+
+}
+
+/* FLOATING CARD */
+
+@keyframes floating{
+
+    0%{
+        transform:
+        translateY(0px);
+    }
+
+    50%{
+        transform:
+        translateY(-12px);
+    }
+
+    100%{
+        transform:
+        translateY(0px);
+    }
+
+}
+
+.floating{
+
+    animation:
+    floating 5s ease-in-out infinite;
+
+}
+
+/* GLOW PULSE */
+
+@keyframes glowPulse{
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(74,222,128,0);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 40px rgba(74,222,128,.4);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 0 rgba(74,222,128,0);
+
+    }
+
+}
+
+.glow-pulse{
+
+    animation:
+    glowPulse 3s infinite;
+
+}
+
+/* HERO TITLE */
+
+@keyframes heroAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+.hero h1{
+
+    animation:
+    heroAppear 1.2s ease;
+
+}
+
+/* HERO PARAGRAPH */
+
+.hero p{
+
+    animation:
+    heroAppear 1.5s ease;
+
+}
+
+/* BUTTON APPEAR */
+
+.hero-buttons{
+
+    animation:
+    heroAppear 1.8s ease;
+
+}
